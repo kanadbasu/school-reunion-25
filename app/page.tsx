@@ -56,6 +56,12 @@ const classmates = [
     location: "Burdwan, India",
     message: "SPORTS DAYS."
   },
+  {
+    name: "Ipsita Sinha",
+    photo: "/Ipsite.jpeg",
+    location: "Bangalore, India",
+    message: "Mrs. Majilla's English classes."
+  },
 ];
 
 export default function Home() {
