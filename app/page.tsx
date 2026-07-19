@@ -7,7 +7,7 @@ const classmates = [
   {
     name: "Kanad Basu",
     photo: "/kanad.jpeg",
-    location: "Troy, New York, USA",
+    location: "New York, USA",
     message: "Still remembers the school auditorium, where we used to play cricket."
   },
   {
@@ -259,6 +259,33 @@ export default function Home() {
     </div>
   </div>
 )}
+<footer
+  style={{
+    marginTop: "60px",
+    paddingTop: "30px",
+    borderTop: "1px solid #d8d0c5",
+    textAlign: "center",
+    color: "#6d6258",
+    fontSize: "0.95rem",
+    lineHeight: "1.8",
+  }}
+>
+  <p>
+    Our reunion website is growing!
+    <br />
+    More classmates, photographs, and memories will be added over the coming
+    weeks.
+  </p>
+
+  <p style={{ marginTop: "20px" }}>
+    If you are from the <strong>ICSE Batch of 2001</strong>, please send your
+    photograph, current location, and a short personal message.
+  </p>
+
+  <p style={{ marginTop: "30px", fontSize: "0.85rem" }}>
+    © 2026 St. Xavier's School, Burdwan • ICSE Batch of 2001
+  </p>
+</footer>
     </main>
   );
 }
