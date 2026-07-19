@@ -20,7 +20,7 @@ const classmates = [
   },
   {
     name: "Nabomita Ghosh",
-    photo: "/Nabmoita.jpeg",
+    photo: "/Nabomita.jpeg",
     location: "Ahmedabad, Gujarat, India",
     message: "I'm forever grateful to Father Michel, Miss Dutta, Miss Sen, Miss Choudhury, Father Alexander, Father Decampo, Sir Mondal, Miss Mondal, Miss Mitra, Miss Dasgupta, and Kangshabanik Sir for the love, discipline, songs, and memories that shaped me."
   },
