@@ -39,15 +39,6 @@ const classmates = [
     message: "Annual Function Day; evergreen Hindi songs sung by Anthony and John Felix sir; Rabindra Sangeet by Miss Dasgupta, Gargi and Nabanita."
   },
   {
-    name: "Vikram Ghosh",
-  },
-  {
-    name: "Saptarshi Bishnu",
-  },
-  {
-    name: "Sudeshna Ghosh",
-  },
-  {
     name: "Nabanita Chatterjee",
     photo: "/pinki.jpeg",
     location: "Burdwan, India",
@@ -58,6 +49,12 @@ const classmates = [
     photo: "/Vishal.jpeg",
     location: "Burdwan/Kolkata, India",
     message: "Tiffin time & Games period."
+  },
+  {
+    name: "Deepmala Sadhu",
+    photo: "/deepmala.jpeg",
+    location: "Burdwan, India",
+    message: "SPORTS DAYS."
   },
 ];
 
