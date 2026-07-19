@@ -14,7 +14,7 @@ const classmates = [
     name: "Anirban Mitra",
     photo: "/anirban.jpg",
     location: "Burdwan, India",
-    message: "Listening to melodious Christmas carols and prayers during assembly, and savouring self/other's delicious tiffin during class.."
+    message: "Listening to melodious Christmas carols and prayers during assembly, and savouring self/other's delicious tiffin during class."
   },
   {
     name: "Piyali Das",
@@ -25,6 +25,12 @@ const classmates = [
     photo: "/Nabomita.jpeg",
     location: "Ahmedabad, Gujarat, India",
     message: "I'm forever grateful to Father Michel, Miss Dutta, Miss Sen, Miss Choudhury, Father Alexander, Father Decampo, Sir Mondal, Miss Mondal, Miss Mitra, Miss Dasgupta, and Kangshabanik Sir for the love, discipline, songs, and memories that shaped me."
+  },
+  {
+    name: "Chayanika Das",
+    photo: "/chayanika.jpg",
+    location: "Bangalore, India",
+    message: "LBest School. Best Years. Best Friends Forever."
   },
   {
     name: "Vikram Ghosh",
