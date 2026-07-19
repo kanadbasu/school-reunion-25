@@ -13,6 +13,8 @@ const classmates = [
   {
     name: "Anirban Mitra",
     photo: "/anirban.jpg",
+    location: "Burdwan, India",
+    message: "Listening to melodious Christmas carols and prayers during assembly, and savouring self/other's delicious tiffin during class.."
   },
   {
     name: "Piyali Das",
