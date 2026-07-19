@@ -68,6 +68,12 @@ const classmates = [
     location: "Burdwan, India",
     message: "Daily games period from 3.15 p.m to 3.45 p.m which was the infusion of fresh air  from the hectic classes all day."
   },
+  {
+    name: "Priyam Dawn",
+    photo: "/priyam.jpeg",
+    location: "Burdwan, India",
+    message: "Always reminiscing about our school days and our bonds."
+  },
 ];
 
 export default function Home() {
