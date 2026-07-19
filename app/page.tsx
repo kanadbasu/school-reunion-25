@@ -80,6 +80,12 @@ const classmates = [
     location: "Kolkata, India",
     message: "Adda with friends both in class and outside (BBT - Bam Bat tala)."
   },
+  {
+    name: "Arnab Bose",
+    photo: "/arnab.jpeg",
+    location: "Burdwan, India",
+    message: "Gossips during games period."
+  },
 ];
 
 export default function Home() {
