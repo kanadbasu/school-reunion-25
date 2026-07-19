@@ -1,65 +1,264 @@
+"use client";
+
+import { useState } from "react";
 import Image from "next/image";
 
+const classmates = [
+  {
+    name: "Kanad Basu",
+    photo: "/kanad.jpeg",
+    location: "Troy, New York, USA",
+    message: "Still remembers the school auditorium, where we used to play cricket."
+  },
+  {
+    name: "Anirban Mitra",
+    photo: "/anirban.jpg",
+  },
+  {
+    name: "Piyali Das",
+    photo: "/piyali.jpg",
+  },
+  {
+    name: "Vikram Ghosh",
+  },
+  {
+    name: "Saptarshi Bishnu",
+  },
+  {
+    name: "Sudeshna Ghosh",
+  },
+  {
+    name: "Nabanita Chatterjee",
+  },
+  {
+    name: "Vishal Bhutoria",
+  },
+];
+
 export default function Home() {
+  const [selectedClassmate, setSelectedClassmate] = useState<
+  (typeof classmates)[number] | null
+  >(null);
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
+    <main
+      style={{
+        minHeight: "100vh",
+        background: "#f8f1e3",
+        color: "#4b1720",
+        padding: "40px 24px 64px",
+        fontFamily: "Georgia, 'Times New Roman', serif",
+      }}
+    >
+      <section
+        style={{
+          maxWidth: "1200px",
+          margin: "0 auto",
+          textAlign: "center",
+        }}
+      >
         <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
+          src="/school-logo.jpeg"
+          alt="St. Xavier's School, Burdwan logo"
+          width={120}
+          height={120}
+          style={{
+            display: "block",
+            margin: "0 auto 18px",
+            objectFit: "contain",
+          }}
         />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+
+        <h1
+          style={{
+            margin: 0,
+            fontSize: "clamp(2rem, 5vw, 4rem)",
+            letterSpacing: "0.04em",
+          }}
+        >
+          ST. XAVIER&apos;S SCHOOL, BURDWAN
+        </h1>
+
+        <p
+          style={{
+            margin: "14px 0 0",
+            fontSize: "clamp(1.1rem, 2.5vw, 1.7rem)",
+            color: "#2f2a26",
+            letterSpacing: "0.08em",
+          }}
+        >
+          ICSE BATCH OF 2001
+        </p>
+
+        <h2
+          style={{
+            margin: "28px 0 6px",
+            fontSize: "clamp(2rem, 4vw, 3rem)",
+            fontStyle: "italic",
+          }}
+        >
+          25-Year Reunion
+        </h2>
+
+        <p
+          style={{
+            margin: 0,
+            fontSize: "clamp(1rem, 2.2vw, 1.4rem)",
+            color: "#8a6529",
+            fontStyle: "italic",
+          }}
+        >
+          “Together Again After 25 Years”
+        </p>
+
+        <hr
+          style={{
+            border: 0,
+            borderTop: "1px solid #9b7b3e",
+            margin: "40px auto 32px",
+            maxWidth: "900px",
+          }}
+        />
+
+        <h2
+          style={{
+            marginBottom: "32px",
+            fontSize: "clamp(1.5rem, 3vw, 2.2rem)",
+            letterSpacing: "0.12em",
+          }}
+        >
+          CLASS OF 2001
+          
+        </h2>
+
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns: "repeat(auto-fit, minmax(140px, 160px))",
+            justifyContent: "center",
+            gap: "28px 20px",
+            alignItems: "start",
+          }}
+        >
+          {classmates.map((classmate) => (
+            <div 
+            key={classmate.name}
+            onClick={() => setSelectedClassmate(classmate)}
+            style={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                cursor: "pointer",
+            }} 
             >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+              {classmate.photo ? (
+  <Image
+    src={classmate.photo}
+    alt={classmate.name}
+    width={140}
+    height={140}
+    style={{
+      width: "140px",
+      height: "140px",
+      maxWidth: "100%",
+      borderRadius: "50%",
+      objectFit: "cover",
+      border: "3px solid #b8924a",
+      boxShadow: "0 4px 12px rgba(0, 0, 0, 0.12)",
+    }}
+  />
+) : (
+  <div
+    style={{
+      width: "140px",
+      height: "140px",
+      borderRadius: "50%",
+      border: "3px solid #b8924a",
+      background: "#eadfc9",
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+      fontSize: "2rem",
+      fontWeight: "bold",
+      color: "#4b1720",
+      boxShadow: "0 4px 12px rgba(0, 0, 0, 0.12)",
+    }}
+  >
+    {classmate.name
+      .split(" ")
+      .map((word) => word[0])
+      .slice(0, 2)
+      .join("")}
+  </div>
+)}
+              <p
+                style={{
+                  marginTop: "10px",
+                  marginBottom: 0,
+                  fontSize: "1rem",
+                  color: "#2f2a26",
+                }}
+              >
+                {classmate.name}
+              </p>
+            </div>
+          ))}
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
+      </section>
+      {selectedClassmate && (
+  <div
+    onClick={() => setSelectedClassmate(null)}
+    style={{
+      position: "fixed",
+      inset: 0,
+      backgroundColor: "rgba(0, 0, 0, 0.55)",
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+      padding: "20px",
+      zIndex: 1000,
+    }}
+  >
+    <div
+      onClick={(event) => event.stopPropagation()}
+      style={{
+        backgroundColor: "#fffaf0",
+        borderRadius: "16px",
+        padding: "32px",
+        width: "100%",
+        maxWidth: "420px",
+        textAlign: "center",
+        boxShadow: "0 20px 50px rgba(0, 0, 0, 0.25)",
+      }}
+    >
+      <h2 style={{ marginBottom: "20px", color: "#6b1f2b" }}>
+        {selectedClassmate.name}
+      </h2>
+
+      <p style={{ marginBottom: "12px", color: "#4f463f" }}>
+  📍 {selectedClassmate.location || "Location coming soon"}
+</p>
+
+<p style={{ marginBottom: "24px", color: "#4f463f" }}>
+  {selectedClassmate.message || "Personal message coming soon."}
+</p>
+
+      <button
+        onClick={() => setSelectedClassmate(null)}
+        style={{
+          border: "none",
+          borderRadius: "8px",
+          padding: "10px 22px",
+          backgroundColor: "#6b1f2b",
+          color: "white",
+          cursor: "pointer",
+          fontSize: "1rem",
+        }}
+      >
+        Close
+      </button>
     </div>
+  </div>
+)}
+    </main>
   );
 }
