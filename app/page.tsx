@@ -28,7 +28,7 @@ const classmates = [
   },
   {
     name: "Chayanika Das",
-    photo: "/chayanika.jpg",
+    photo: "/chayanika.jpeg",
     location: "Bangalore, India",
     message: "LBest School. Best Years. Best Friends Forever."
   },
