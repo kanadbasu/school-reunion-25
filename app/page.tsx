@@ -74,6 +74,12 @@ const classmates = [
     location: "Burdwan, India",
     message: "Always reminiscing about our school days and our bonds."
   },
+  {
+    name: "Somnath Chakraborty",
+    photo: "/somnath.jpeg",
+    location: "Kolkata, India",
+    message: "Adda with friends both in class and outside (BBT - Bam Bat tala)."
+  },
 ];
 
 export default function Home() {
