@@ -58,7 +58,7 @@ const classmates = [
   },
   {
     name: "Ipsita Sinha",
-    photo: "/Ipsite.jpeg",
+    photo: "/Ipsita.jpeg",
     location: "Bangalore, India",
     message: "Mrs. Majilla's English classes."
   },
