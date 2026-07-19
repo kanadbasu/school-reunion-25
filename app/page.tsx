@@ -30,7 +30,13 @@ const classmates = [
     name: "Chayanika Das",
     photo: "/chayanika.jpeg",
     location: "Bangalore, India",
-    message: "LBest School. Best Years. Best Friends Forever."
+    message: "Best School. Best Years. Best Friends Forever."
+  },
+  {
+    name: "Gargi Mondal",
+    photo: "/GargiM.jpeg",
+    location: "Burdwan, India",
+    message: "Annual Function Day; evergreen Hindi songs sung by Anthony and John Felix sir; Rabindra Sangeet by Miss Dasgupta, Gargi and Nabanita."
   },
   {
     name: "Vikram Ghosh",
