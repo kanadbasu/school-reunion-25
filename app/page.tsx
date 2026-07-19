@@ -49,6 +49,9 @@ const classmates = [
   },
   {
     name: "Nabanita Chatterjee",
+    photo: "/pinki.jpeg",
+    location: "Burdwan, India",
+    message: "Miss Majhilla's English Class , Sir Mondal's BENGALI songs and Sir Chatterjee's Drawing class."
   },
   {
     name: "Vishal Bhutoria",
