@@ -52,6 +52,9 @@ const classmates = [
   },
   {
     name: "Vishal Bhutoria",
+    photo: "/Vishal.jpeg",
+    location: "Burdwan/Kolkata, India",
+    message: "Tiffin time & Games period."
   },
 ];
 
