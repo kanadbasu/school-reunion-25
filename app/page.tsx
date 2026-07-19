@@ -62,6 +62,12 @@ const classmates = [
     location: "Bangalore, India",
     message: "Mrs. Majilla's English classes."
   },
+  {
+    name: "Himadri Nag",
+    photo: "/himadri.jpeg",
+    location: "Burdwan, India",
+    message: "Daily games period from 3.15 p.m to 3.45 p.m which was the infusion of fresh air  from the hectic classes all day."
+  },
 ];
 
 export default function Home() {
