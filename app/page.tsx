@@ -60,7 +60,7 @@ const classmates = [
     name: "Ipsita Sinha",
     photo: "/Ipsita.jpeg",
     location: "Bangalore, India",
-    message: "Mrs. Majilla's English classes."
+    message: "Mrs. Majilla's English classes. Sir Kansha Banik believed in me even before I believed in myself, and Miss Majilla's English classes gave me the confidence to find my voice—the very voice that shaped my journey today."
   },
   {
     name: "Himadri Nag",
