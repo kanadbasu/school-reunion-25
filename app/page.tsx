@@ -92,6 +92,12 @@ const classmates = [
     location: "Kolkata, India",
     message: "School uniforms, shoes, periods, sections,classrooms, exams,different staff room’s , even toilets, games periods. Getting love, scold and knowledge from lovely teachers , participating in sports day, annual functions. Friends , eating lunch together , millions of memories …… one school 11 years."
   },
+  {
+    name: "Suvadeep Thakur",
+    photo: "/thakur.jpeg",
+    location: "Burdwan, India",
+    message: "25 Years Later… Same Hearts, New Stories, Forever Classmates."
+  },
 ];
 
 export default function Home() {
