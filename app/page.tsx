@@ -86,6 +86,12 @@ const classmates = [
     location: "Burdwan, India",
     message: "Gossips during games period."
   },
+  {
+    name: "Soumita Ghosh",
+    photo: "/soumita.jpeg",
+    location: "Kolkata, India",
+    message: "School uniforms, shoes, periods, sections,classrooms, exams,different staff room’s , even toilets, games periods. Getting love, scold and knowledge from lovely teachers , participating in sports day, annual functions. Friends , eating lunch together , millions of memories …… one school 11 years."
+  },
 ];
 
 export default function Home() {
