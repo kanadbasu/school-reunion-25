@@ -98,6 +98,12 @@ const classmates = [
     location: "Burdwan, India",
     message: "25 Years Later… Same Hearts, New Stories, Forever Classmates."
   },
+  {
+    name: "Debamitra Bhattacharya",
+    photo: "/debamitra.jpeg",
+    location: "Bangalore, India",
+    message: "Annual function and rehearsal."
+  },
 ];
 
 export default function Home() {
