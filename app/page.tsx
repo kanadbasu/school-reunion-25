@@ -106,6 +106,12 @@ const classmates = [
     location: "Bangalore, India",
     message: "Annual function and rehearsal."
   },
+  {
+    name: "Sudeshna Ghosh",
+    photo: "/sudeshna.jpeg",
+    location: "California, USA",
+    message: "Games time and sports day."
+  },
 ];
 
 export default function Home() {
