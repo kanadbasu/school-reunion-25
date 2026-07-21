@@ -19,6 +19,8 @@ const classmates = [
   {
     name: "Piyali Das",
     photo: "/piyali.jpg",
+    location: "BBangalore, India",
+    message: "Remembering Quiet library corners, beloved teachers and fun filled chit-chats with my friends."
   },
   {
     name: "Nabomita Ghosh",
